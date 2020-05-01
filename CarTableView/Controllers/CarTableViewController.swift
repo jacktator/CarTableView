@@ -8,6 +8,8 @@
 
 import UIKit
 
+let SEGUE_TO_DETAIL = "segueToDetail"
+
 class CarTableViewController: UIViewController {
 
     @IBOutlet weak var navbar: UINavigationItem!
@@ -58,29 +60,32 @@ extension CarTableViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
         // Retrieve Car Data
-        let currentIndex = indexPath.row;
-        let selectedCar = carArray[currentIndex];
-        
-        // Push to new ViewController
+        let selectedIndex = indexPath.row;
+        let selectedCar = carArray[selectedIndex];
+
+        // Push to new ViewController?
         // By performing Segue
-        self.performSegue(withIdentifier: "segueToDetail", sender: selectedCar)
-        
+        print("CarTableViewController:   Navigating to CarDetailViewController")
+        self.performSegue(withIdentifier: SEGUE_TO_DETAIL, sender: selectedCar)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Read/Get Data from Segue
-        // Inject the Data into CarDetailViewController
-        if segue.identifier == "segueToDetail" {
-            
+        // Inject the Data into Destination (CarDetailViewController)
+        print("CarTableViewController:  prepareForSegue(): \(segue.identifier ?? "")")
+        if segue.identifier == SEGUE_TO_DETAIL {
+
             // Get Data
             let selectedCar = sender as? Car
-            
+
             // Get Destination ViewController
             let detailVC = segue.destination as? CarDetailViewController
             detailVC?.car = selectedCar
+        } else {
+            print("CarTableViewController:  prepareForSegue(): Non-intended Segue. Typo?)")
         }
     }
-    
+
 }

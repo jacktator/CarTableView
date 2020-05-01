@@ -21,7 +21,7 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func onButtonClick(_ sender: Any) {
-        print("Navigate to CarTableView")
+        print("WelcomeViewController:   Navigating to CarTableViewController")
     }
     
 }

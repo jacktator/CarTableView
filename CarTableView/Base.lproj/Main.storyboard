@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DSP-5n-HzK">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +12,7 @@
             <objects>
                 <navigationController id="DSP-5n-HzK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a1e-jO-7xh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -28,20 +28,20 @@
             <objects>
                 <viewController title="Welcome" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="CarTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Car App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk9-gh-8es">
-                                <rect key="frame" x="97" y="152" width="220" height="28"/>
+                                <rect key="frame" x="97" y="108" width="220" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wau-sT-AoM">
-                                <rect key="frame" x="111" y="663" width="192" height="39"/>
+                                <rect key="frame" x="111" y="537" width="192" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Show Me The Cars">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="345-UU-Mvq"/>
@@ -73,11 +73,11 @@
             <objects>
                 <viewController title="Car Table" id="dEH-xh-HDf" customClass="CarTableViewController" customModule="CarTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mxM-xO-zNp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-4e-HZp">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="726"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="carCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carCell" textLabel="mYB-Op-xAb" detailTextLabel="5w7-9i-g4b" style="IBUITableViewCellStyleValue1" id="6kl-kc-Dfj">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
@@ -97,7 +97,7 @@
                                                     <rect key="frame" x="279" y="11.999999999999998" width="115" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -126,23 +126,23 @@
                     <connections>
                         <outlet property="carTableView" destination="MnH-4e-HZp" id="CYm-WA-dOo"/>
                         <outlet property="navbar" destination="V5R-Pj-cOx" id="vvE-EB-x6m"/>
-                        <segue destination="ya3-TB-XAf" kind="show" identifier="segueToDetail" id="wZQ-Gr-4Py"/>
+                        <segue destination="kF7-9o-2m9" kind="show" identifier="segueToDetail" id="rHK-oa-jBJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yX0-Q9-TbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="889.85507246376824" y="138.61607142857142"/>
         </scene>
-        <!--CarDetailViewController-->
-        <scene sceneID="oCd-Tc-ckA">
+        <!--Car Detail View Controller-->
+        <scene sceneID="HoH-rR-fOU">
             <objects>
-                <viewController title="CarDetailViewController" id="ya3-TB-XAf" customClass="CarDetailViewController" customModule="CarTableView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dxm-SG-RqZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController title="Car Detail View Controller" id="kF7-9o-2m9" customClass="CarDetailViewController" customModule="CarTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kq5-WK-rmA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description for the car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZb-lR-Bk9">
-                                <rect key="frame" x="121.66666666666669" y="188" width="171" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the default description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4a-lW-AKh">
+                                <rect key="frame" x="94" y="144" width="226" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,20 +150,22 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DZb-lR-Bk9" firstAttribute="top" secondItem="bsG-4R-xMV" secondAttribute="top" constant="100" id="CPY-0U-xXb"/>
-                            <constraint firstItem="DZb-lR-Bk9" firstAttribute="centerX" secondItem="bsG-4R-xMV" secondAttribute="centerX" id="jbe-Rl-PiQ"/>
+                            <constraint firstItem="g4a-lW-AKh" firstAttribute="centerX" secondItem="iKT-Ub-6Xa" secondAttribute="centerX" id="02R-U6-wF7"/>
+                            <constraint firstItem="g4a-lW-AKh" firstAttribute="top" secondItem="iKT-Ub-6Xa" secondAttribute="top" constant="100" id="dRC-pf-Ws5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bsG-4R-xMV"/>
+                        <viewLayoutGuide key="safeArea" id="iKT-Ub-6Xa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Car Detail" id="l6l-Y6-Dzq"/>
+                    <navigationItem key="navigationItem" title="Car Name (Default)" id="mLO-96-Lik">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="r9A-xA-36C"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="decriptionLabel" destination="DZb-lR-Bk9" id="u9K-A5-vkG"/>
-                        <outlet property="navbar" destination="l6l-Y6-Dzq" id="Q4b-Tp-dGS"/>
+                        <outlet property="descriptionLabel" destination="g4a-lW-AKh" id="FJU-zJ-RRN"/>
+                        <outlet property="navbar" destination="mLO-96-Lik" id="hxb-ZP-8db"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rq6-Np-UIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8a-ce-yaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835" y="139"/>
+            <point key="canvasLocation" x="1906" y="139"/>
         </scene>
     </scenes>
 </document>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C24B2FF245A4B06008987ED /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C24B2FE245A4B06008987ED /* CarDetailViewController.swift */; };
 		3C37BF86245105E00035453A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37BF85245105E00035453A /* AppDelegate.swift */; };
 		3C37BF88245105E00035453A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37BF87245105E00035453A /* SceneDelegate.swift */; };
 		3C37BF8A245105E00035453A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37BF89245105E00035453A /* WelcomeViewController.swift */; };
@@ -16,10 +15,10 @@
 		3C37BF92245105E20035453A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C37BF90245105E20035453A /* LaunchScreen.storyboard */; };
 		3C37BF9B24510D9E0035453A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37BF9A24510D9E0035453A /* Car.swift */; };
 		3C37BF9E24510EFF0035453A /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37BF9D24510EFF0035453A /* CarTableViewController.swift */; };
+		3CE825D7245C20A1009011CF /* CarDetailViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE825D6245C20A1009011CF /* CarDetailViewContrller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C24B2FE245A4B06008987ED /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
 		3C37BF82245105E00035453A /* CarTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C37BF85245105E00035453A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C37BF87245105E00035453A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		3C37BF93245105E20035453A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C37BF9A24510D9E0035453A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		3C37BF9D24510EFF0035453A /* CarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
+		3CE825D6245C20A1009011CF /* CarDetailViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewContrller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			children = (
 				3C37BF89245105E00035453A /* WelcomeViewController.swift */,
 				3C37BF9D24510EFF0035453A /* CarTableViewController.swift */,
-				3C24B2FE245A4B06008987ED /* CarDetailViewController.swift */,
+				3CE825D6245C20A1009011CF /* CarDetailViewContrller.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,9 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE825D7245C20A1009011CF /* CarDetailViewContrller.swift in Sources */,
 				3C37BF8A245105E00035453A /* WelcomeViewController.swift in Sources */,
 				3C37BF86245105E00035453A /* AppDelegate.swift in Sources */,
-				3C24B2FF245A4B06008987ED /* CarDetailViewController.swift in Sources */,
 				3C37BF9E24510EFF0035453A /* CarTableViewController.swift in Sources */,
 				3C37BF9B24510D9E0035453A /* Car.swift in Sources */,
 				3C37BF88245105E00035453A /* SceneDelegate.swift in Sources */,
