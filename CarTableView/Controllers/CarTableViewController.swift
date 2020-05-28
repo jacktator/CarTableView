@@ -31,13 +31,11 @@ class CarTableViewController: UIViewController {
         navbar.title = "Car Gallery"
         
     }
-
 }
 
 extension CarTableViewController: UITableViewDataSource, UITableViewDelegate {
     
     /* TableView Deletgate Methods */
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return carArray.count
